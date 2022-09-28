@@ -1,0 +1,17 @@
+<p>parent-component works!</p>
+
+<app-child-one [messageForChild] = parentMessage></app-child-one>
+
+<!-- <p> Message form the child: {{messageFromChildToParent}}</p> -->
+
+<p> messsgae from the injected service: {{message}} </p>
+
+
+<app-unrelated-comp></app-unrelated-comp>
+
+<br>
+<br>
+
+<button (click)="changeMessage()">Refresh Parent Message Dynamic binding property manually via button here</button>
+
+<app-child-two [messageForTheSecondChild]="parentMessage2"></app-child-two>
